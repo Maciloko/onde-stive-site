@@ -254,7 +254,7 @@ footer a{color:var(--muted)}
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 6l6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15M15 6v15"/></svg></div>
         <h3>Ruas sem internet</h3>
-        <p>Baixe as regiões onde você trabalha. O nome da rua sai do próprio celular, sem consultar o mapa na internet.</p>
+        <p>Baixe as regiões onde você trabalha. O nome da rua sai do próprio celular, mesmo sem internet. Com internet, o app completa com o número da rua e os bairros.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
@@ -295,27 +295,29 @@ footer a{color:var(--muted)}
       <h2>O relatório que você escrevia à mão, pronto</h2>
       <p class="sec-lead">No fim do turno, o Onde Stive junta tudo o que aconteceu em um texto organizado.</p>
       <ul class="checks">
-        <li><span><b>Cabeçalho do turno</b>: viatura, encarregado e KM inicial e final, com a diferença calculada.</span></li>
-        <li><span><b>Patrulhamento pelos bairros</b>, hora a hora, a partir do início do patrulhamento.</span></li>
+        <li><span><b>Cabeçalho do turno</b>: data, início do patrulhamento, viatura e KM inicial e final, com a diferença calculada.</span></li>
+        <li><span><b>Patrulhamento pelos bairros</b>, hora a hora, com a rua de cada hora cheia.</span></li>
         <li><span><b>Cada parada</b> com endereço, talão, número, resultado da ocorrência e observações.</span></li>
         <li><span><b>Editável</b>: toque para corrigir um dado ou excluir uma parada antes de encerrar.</span></li>
       </ul>
     </div>
     <div class="paper" aria-label="Exemplo de Folha de QRU">
       <h4>FOLHA DE QRU</h4>
-      <div><b>VTR:</b> 00-000</div>
-      <div><b>KM inicial:</b> 120.450 &nbsp; <b>KM final:</b> 120.612</div>
-      <div><b>Diferença:</b> 162 km</div>
-      <div><b>Início do patrulhamento:</b> 18:00</div>
+      <div>20NOV26</div>
+      <div>Início do patrulhamento: 17h53</div>
+      <div>VTR: X-00000</div>
+      <div>KM inicial: 120450</div>
+      <div>KM final: 120612</div>
+      <div>Diferença: 000162</div>
       <div class="sep"></div>
-      <div><b>Patrulhamento pelos bairros:</b></div>
-      <div>18h Centro · 19h Jd. Exemplo · 20h Vila Modelo</div>
+      <div>1. Das 17h53 às 18h00 - Patrulhamento pelos bairros: Centro.</div>
       <div class="sep"></div>
-      <div><b>PARADA</b> 19:24</div>
-      <div>&nbsp; R. das Flores, 300</div>
-      <div>&nbsp; Talão: 0000 &nbsp; Número: 00</div>
+      <div>2. 18h00 - Rua das Flores 300</div>
+      <div>- Das 18h00 às 19h00 - Patrulhamento pelos bairros: Centro, Jardim Exemplo.</div>
+      <div>- Parada: 18h24 às 18h51 - Rua das Flores 300, Jardim Exemplo. (Atendimento de Ocorrência)</div>
+      <div>&nbsp; Talão: 0000</div>
+      <div>&nbsp; KM local: 120500</div>
       <div>&nbsp; Resultado da Ocorrência: …</div>
-      <div>&nbsp; Obs: …</div>
     </div>
   </div>
 </section>
@@ -372,7 +374,7 @@ footer a{color:var(--muted)}
     <span class="kicker">Dúvidas</span>
     <h2>Perguntas frequentes</h2>
     <div class="faq">
-      <details><summary>Preciso de internet durante a ronda?</summary><p>Não, se você baixar as ruas da sua região. O GPS funciona sem internet, e o nome da rua sai do próprio celular. A internet só é usada para ativar a chave, baixar regiões e atualizar o app.</p></details>
+      <details><summary>Preciso de internet durante a ronda?</summary><p>Para o registro básico, não: com as ruas da sua região baixadas, o GPS e o nome da rua funcionam sem internet. Mas os bairros e o número da rua vêm da internet; sem sinal, o relatório fica sem eles naquele trecho. A internet também é usada para ativar a chave, baixar regiões e atualizar o app.</p></details>
       <details><summary>Por que o app pede localização "o tempo todo"?</summary><p>Porque a ronda continua com a tela desligada. Sem essa permissão, o Android interrompe o GPS quando o celular vai para o bolso.</p></details>
       <details><summary>O app gasta muita bateria?</summary><p>Ele usa o GPS durante o turno inteiro, então o consumo é maior que o normal. Para o registro não falhar, aceite ignorar a otimização de bateria. Se der, deixe o celular no carregador da viatura.</p></details>
       <details><summary>E se o GPS perder o sinal?</summary><p>O app mantém o último ponto conhecido e volta a registrar quando o satélite retorna. Há também os botões Forçar GPS e Retomar GPS.</p></details>
