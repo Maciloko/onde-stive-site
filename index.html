@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Onde Stive — Registro de ronda pelo GPS</title>
-<meta name="description" content="Onde Stive registra a ronda pelo GPS, anota as ruas de cada hora, as paradas e as ocorrências, e monta a Folha de QRU no fim do turno.">
+<title>Onde Stive — Registro de patrulhamento pelo GPS</title>
+<meta name="description" content="Onde Stive registra o patrulhamento pelo GPS, anota as ruas de cada hora, os QRU e as ocorrências, e monta a Folha de QRU no fim do turno.">
 <meta name="theme-color" content="#0b0b0c">
-<meta property="og:title" content="Onde Stive — Registro de ronda">
-<meta property="og:description" content="A ronda registrada sozinha: ruas de cada hora, paradas e ocorrências, tudo pronto na Folha de QRU.">
+<meta property="og:title" content="Onde Stive — Registro de patrulhamento">
+<meta property="og:description" content="O patrulhamento registrado sozinho: ruas de cada hora, QRU e ocorrências, tudo pronto na Folha de QRU.">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="estilo.css?v=2">
 </head>
 <body>
 
@@ -35,9 +35,9 @@
 <div class="hero">
   <div class="wrap">
     <div>
-      <span class="tag"><span class="dot"></span>Registro de ronda pelo GPS</span>
+      <span class="tag"><span class="dot"></span>Registro de patrulhamento pelo GPS</span>
       <h1>Patrulhe.<br>O <em>Onde Stive</em> anota tudo.</h1>
-      <p class="lead">O app grava a ronda pelo GPS, mesmo com a tela desligada. Ele anota a rua de cada hora, as paradas e as ocorrências. No fim do turno, a Folha de QRU já está pronta.</p>
+      <p class="lead">O app grava o patrulhamento pelo GPS, mesmo com a tela desligada. Ele anota a rua de cada hora, os QRU e as ocorrências. No fim do turno, a Folha de QRU já está pronta.</p>
       <div class="cta">
         <a class="btn btn-red" href="https://ondestive.com/app/ronda.apk">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M6 11l6 6 6-6M5 21h14"/></svg>
@@ -69,12 +69,12 @@
             <small>Turno</small>
             <ul class="hours">
               <li><span>18:00</span><span>Av. Exemplo</span></li>
-              <li><span>19:00</span><span>R. das Flores · parada</span></li>
+              <li><span>19:00</span><span>R. das Flores · QRU</span></li>
               <li><span>20:00</span><span>Rodovia — trecho</span></li>
               <li><span>21:00</span><span>R. São João</span></li>
             </ul>
           </div>
-          <div class="scr-btn">+ Registrar parada</div>
+          <div class="scr-btn">+ Registrar QRU</div>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
         <h3>GPS com a tela desligada</h3>
-        <p>O app segue gravando com o celular no bolso. Uma notificação na tela de bloqueio mostra que a ronda está ativa.</p>
+        <p>O app segue gravando com o celular no bolso. Uma notificação na tela de bloqueio mostra que o patrulhamento está ativo.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
@@ -101,7 +101,7 @@
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M8 8h8M8 12h5"/></svg></div>
-        <h3>Paradas e ocorrências</h3>
+        <h3>QRU e ocorrências</h3>
         <p>Quando a viatura para, o app guarda o endereço. Você completa com talão, número, resultado da ocorrência e observações.</p>
       </div>
       <div class="card">
@@ -112,7 +112,7 @@
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></div>
         <h3>Folha de QRU pronta</h3>
-        <p>VTR, KM inicial e final, início do patrulhamento, bairros e paradas já entram no relatório. Depois é só copiar e colar.</p>
+        <p>VTR, KM inicial e final, início do patrulhamento, bairros e QRU já entram no relatório. Depois é só copiar e colar.</p>
       </div>
       <div class="card">
         <div class="ico"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
@@ -134,8 +134,8 @@
       <div class="step"><div><h3>Ative o app</h3><p>Na primeira vez, digite a sua chave de ativação. O app confirma a chave e libera o uso.</p></div></div>
       <div class="step"><div><h3>Inicie o turno</h3><p>Informe a viatura (VTR) e o KM inicial. A partir daí o GPS começa a registrar a patrulha.</p></div></div>
       <div class="step"><div><h3>Patrulhe normalmente</h3><p>Guarde o celular. O app anota a rua de cada hora e os bairros por onde você passou, mesmo com a tela desligada.</p></div></div>
-      <div class="step"><div><h3>Registre as paradas</h3><p>Quando a viatura parar, o endereço já aparece. Marque se foi atendimento de ocorrência ou alimentação, e preencha talão, número e resultado.</p></div></div>
-      <div class="step"><div><h3>Encerre e copie a QRU</h3><p>Informe o KM final e encerre o turno. O relatório vai para o histórico e pode ser copiado em um toque.</p></div></div>
+      <div class="step"><div><h3>Registre os QRU</h3><p>Quando a viatura parar, o endereço já aparece. Marque se foi atendimento de ocorrência ou alimentação, e preencha talão, número e resultado.</p></div></div>
+      <div class="step"><div><h3>Encerre e copie a Folha de QRU</h3><p>Informe o KM final e encerre o turno. O relatório vai para o histórico e pode ser copiado em um toque.</p></div></div>
     </div>
   </div>
 </section>
@@ -150,8 +150,8 @@
       <ul class="checks">
         <li><span><b>Cabeçalho do turno</b>: data, início do patrulhamento, viatura e KM inicial e final, com a diferença calculada.</span></li>
         <li><span><b>Patrulhamento pelos bairros</b>, hora a hora, com a rua de cada hora cheia.</span></li>
-        <li><span><b>Cada parada</b> com endereço, talão, número, resultado da ocorrência e observações.</span></li>
-        <li><span><b>Editável</b>: toque para corrigir um dado ou excluir uma parada antes de encerrar.</span></li>
+        <li><span><b>Cada QRU</b> com endereço, talão, número, resultado da ocorrência e observações.</span></li>
+        <li><span><b>Editável</b>: toque para corrigir um dado ou excluir um QRU antes de encerrar.</span></li>
       </ul>
     </div>
     <div class="paper" aria-label="Exemplo de Folha de QRU">
@@ -206,7 +206,7 @@
           <li><span><b>Baixe o APK</b> pelo botão ao lado, no próprio celular Android.</span></li>
           <li><span>Se o Android pedir, <b>permita instalar apps desta fonte</b> e toque em Instalar.</span></li>
           <li><span>Abra o app e digite a sua <b>chave de ativação</b>.</span></li>
-          <li><span>Na localização, escolha <b>Permitir o tempo todo</b>. Sem isso, a ronda para quando a tela apaga.</span></li>
+          <li><span>Na localização, escolha <b>Permitir o tempo todo</b>. Sem isso, o registro do patrulhamento para quando a tela apaga.</span></li>
           <li><span>Aceite <b>ignorar a otimização de bateria</b> e não force o fechamento do app durante o turno.</span></li>
         </ol>
       </div>
@@ -227,11 +227,11 @@
     <span class="kicker">Dúvidas</span>
     <h2>Perguntas frequentes</h2>
     <div class="faq">
-      <details><summary>Preciso de internet durante a ronda?</summary><p>Para o registro básico, não: com as ruas da sua região baixadas, o GPS e o nome da rua funcionam sem internet. Mas os bairros e o número da rua vêm da internet; sem sinal, o relatório fica sem eles naquele trecho. A internet também é usada para ativar a chave, baixar regiões e atualizar o app.</p></details>
-      <details><summary>Por que o app pede localização "o tempo todo"?</summary><p>Porque a ronda continua com a tela desligada. Sem essa permissão, o Android interrompe o GPS quando o celular vai para o bolso.</p></details>
+      <details><summary>Preciso de internet durante o patrulhamento?</summary><p>Para o registro básico, não: com as ruas da sua região baixadas, o GPS e o nome da rua funcionam sem internet. Mas os bairros e o número da rua vêm da internet; sem sinal, o relatório fica sem eles naquele trecho. A internet também é usada para ativar a chave, baixar regiões e atualizar o app.</p></details>
+      <details><summary>Por que o app pede localização "o tempo todo"?</summary><p>Porque o registro do patrulhamento continua com a tela desligada. Sem essa permissão, o Android interrompe o GPS quando o celular vai para o bolso.</p></details>
       <details><summary>O app gasta muita bateria?</summary><p>Ele usa o GPS durante o turno inteiro, então o consumo é maior que o normal. Para o registro não falhar, aceite ignorar a otimização de bateria. Se der, deixe o celular no carregador da viatura.</p></details>
       <details><summary>E se o GPS perder o sinal?</summary><p>O app mantém o último ponto conhecido e volta a registrar quando o satélite retorna. Há também os botões Forçar GPS e Retomar GPS.</p></details>
-      <details><summary>Posso corrigir uma parada?</summary><p>Sim. Toque na parada para editar ou excluir antes de encerrar o turno.</p></details>
+      <details><summary>Posso corrigir um QRU?</summary><p>Sim. Toque no QRU para editar ou excluir antes de encerrar o turno.</p></details>
       <details><summary>Como consigo a chave de ativação?</summary><p>A chave é individual. Peça a sua ao administrador do app pelo botão <b>Solicitar acesso</b>, no alto da página, que abre o WhatsApp, ou pelo e-mail <a href="mailto:ondestiveapp@gmail.com">ondestiveapp@gmail.com</a>. Cada chave só pode ser usada uma vez.</p></details>
       <details><summary>Funciona no iPhone?</summary><p>Por enquanto, não. O Onde Stive é só para Android.</p></details>
     </div>
@@ -249,6 +249,6 @@
     <div><a href="privacidade.html">Política de privacidade</a></div>
   </div>
 </footer>
-<script src="site.js"></script>
+<script src="site.js?v=2"></script>
 </body>
 </html>
