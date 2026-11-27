@@ -24,32 +24,44 @@
   <div class="wrap">
     <span class="kicker">Privacidade</span>
     <h2>Política de privacidade</h2>
-    <p>Última atualização: 24 de novembro de 2026.</p>
+    <p>Última atualização: 27 de novembro de 2026.</p>
 
-    <p class="priv-sum"><b>Resumo:</b> o Onde Stive guarda o registro do seu patrulhamento no seu celular. Não temos servidor que receba a sua localização.</p>
+    <p class="priv-sum"><b>Resumo:</b> o Onde Stive guarda o registro do seu patrulhamento no seu celular. Durante o turno, o app usa a localização do aparelho, inclusive com o app fechado ou a tela desligada. Não temos servidor que receba a sua localização, o app não mostra propaganda e não usa ferramentas de análise de uso.</p>
 
     <h3>1. Quem é o responsável</h3>
     <p>O responsável pelo Onde Stive e pelos dados tratados nele (controlador, na LGPD) é Guilherme Maciel. Contato: <a href="mailto:ondestiveapp@gmail.com">ondestiveapp@gmail.com</a>.</p>
 
     <h3>2. O que fica no celular</h3>
-    <p>Turnos, posições do GPS, ruas, bairros, QRU e relatórios ficam gravados só no aparelho. Nós não recebemos esses dados. O relatório só sai do celular quando você mesmo o copia e envia.</p>
+    <p>Turnos, posições do GPS, ruas, bairros, QRU e relatórios ficam gravados só no aparelho. O que você digita na aba Gravidade também fica só no aparelho. Nós não recebemos esses dados. O relatório e o PDF da Gravidade só saem do celular quando você mesmo os copia ou compartilha.</p>
 
-    <h3>3. O que sai do celular, e para quem</h3>
+    <h3>3. Uso da localização</h3>
+    <p>O app coleta a localização do celular para registrar o patrulhamento: a rua a cada hora cheia, os bairros e os QRU. A coleta começa quando você inicia o turno e termina quando o turno é encerrado, e continua mesmo com o app fechado ou a tela desligada. Para isso, o app pede a permissão de localização “o tempo todo”; antes do pedido, uma janela explica esse uso. Fora do turno, o app não coleta a localização. Na tela “Ruas offline”, ele só lê a última posição que o Android já tem guardada, para sugerir a região a baixar; essa posição não é gravada e não sai do celular. A localização não é usada para propaganda e não é vendida.</p>
+
+    <h3>4. O que sai do celular, e para quem</h3>
     <ul>
-      <li><b>Nome da rua:</b> para saber a rua de uma posição, o app usa primeiro a base de ruas baixada no próprio celular. Só quando ela não tem a rua, a posição do momento é consultada no serviço de endereços do próprio Android (na maioria dos aparelhos, do Google) e, como reserva, no LocationIQ. Esses serviços recebem a posição consultada, mas não sabem quem você é.</li>
+      <li><b>Endereço:</b> o nome da rua vem primeiro da base de ruas baixada no próprio celular. Durante o turno, a posição do momento também é consultada no serviço de endereços do próprio Android (na maioria dos aparelhos, do Google) e, se ele não responder, no LocationIQ, para completar o número, o bairro e o nome do local do QRU. Isso acontece mesmo com a base de ruas no celular. Esses serviços recebem só a posição consultada, sem o seu nome, a sua chave ou o seu RE.</li>
       <li><b>Ativação:</b> a chave de ativação é conferida no Firebase (Google). Vai só a chave, sem nome, telefone ou dados do aparelho. A chave contém o seu RE (matrícula), por isso ela identifica você.</li>
-      <li><b>Atualizações e mapas de ruas:</b> o app baixa as versões novas de ondestive.com e os pacotes de ruas do GitHub. Como em qualquer download, esses serviços veem o endereço de internet do aparelho.</li>
+      <li><b>Atualizações e mapas de ruas:</b> na versão baixada no site, o app baixa as versões novas de ondestive.com. Na versão da Google Play, as atualizações vêm pela loja, conforme as regras do Google. Nas duas, os pacotes de ruas vêm do GitHub. Como em qualquer download, esses serviços veem o endereço de internet do aparelho.</li>
     </ul>
 
-    <h3>4. Cadastro para receber a chave</h3>
+    <h3>5. Cadastro para receber a chave</h3>
     <p>Para receber a chave, você preenche o formulário em acesso.ondestive.com com: QRA (nome de guerra), posto ou graduação, batalhão e companhia, RE (sem o dígito), telefone e e-mail. Quem pediu antes do formulário enviou os mesmos dados pelo WhatsApp ou por e-mail. Até 24 de novembro de 2026 também era pedido o CPF, que não é mais.</p>
     <p>O formulário guarda esses dados, a data do pedido, a decisão e a chave num banco da Cloudflare, que só o administrador acessa. Os pedidos anteriores ao formulário estão nesse mesmo banco e numa planilha no Google Drive. O app não recebe esses dados. Eles servem para liberar e controlar o acesso e para entrar em contato com você sobre o app, inclusive se no futuro ele passar a ser pago. Ninguém além do administrador usa esses dados, e eles não são vendidos nem repassados. A chave é enviada a você pelo WhatsApp. A Cloudflare, o Google e o WhatsApp guardam o que passa por eles conforme as regras de cada um. O banco da Cloudflare pode ficar fora do Brasil, e o banco das chaves (Firebase) fica nos Estados Unidos.</p>
     <p>Os dados ficam guardados enquanto a sua chave estiver em uso ou até você pedir a remoção. Se pedir, a sua chave deixa de funcionar.</p>
 
-    <h3>5. Este site</h3>
+    <h3>6. Este site</h3>
     <p>O site não usa cookies nem contador de visitas. A página do formulário usa o Turnstile, da Cloudflare, para barrar robôs: ele analisa dados técnicos do navegador e o endereço de internet. O site passa pela Cloudflare, que o protege contra ataques e pode registrar dados técnicos do acesso, como o endereço de internet.</p>
 
-    <h3>6. Seus direitos (LGPD)</h3>
+    <h3>7. Permissões do app</h3>
+    <ul>
+      <li><b>Localização precisa e “o tempo todo”:</b> registrar o patrulhamento durante o turno, com a tela desligada.</li>
+      <li><b>Notificações:</b> mostrar o turno em andamento e o aviso de fim do turno.</li>
+      <li><b>Ignorar a economia de bateria:</b> o Android não interromper o registro no meio do turno.</li>
+      <li><b>Iniciar com o celular:</b> retomar o turno aberto depois de reiniciar o aparelho.</li>
+      <li><b>Instalar apps (só na versão do site):</b> instalar as atualizações baixadas de ondestive.com.</li>
+    </ul>
+
+    <h3>8. Seus direitos (LGPD)</h3>
     <p>Para apagar seus dados do app, desinstale-o ou limpe os dados dele nas configurações do Android. Para saber quais dados seus estão no cadastro da chave, corrigi-los ou pedir a remoção, ou para tirar dúvidas, escreva para <a href="mailto:ondestiveapp@gmail.com">ondestiveapp@gmail.com</a>.</p>
   </div>
 </section>
