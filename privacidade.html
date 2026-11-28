@@ -24,7 +24,7 @@
   <div class="wrap">
     <span class="kicker">Privacidade</span>
     <h2>Política de privacidade</h2>
-    <p>Última atualização: 27 de novembro de 2026.</p>
+    <p>Última atualização: 28 de novembro de 2026.</p>
 
     <p class="priv-sum"><b>Resumo:</b> o Onde Stive guarda o registro do seu patrulhamento no seu celular. Durante o turno, o app usa a localização do aparelho, inclusive com o app fechado ou a tela desligada. Não temos servidor que receba a sua localização, o app não mostra propaganda e não usa ferramentas de análise de uso.</p>
 
@@ -43,14 +43,16 @@
     <h3>4. O que sai do celular, e para quem</h3>
     <ul>
       <li><b>Endereço:</b> o nome da rua vem primeiro da base de ruas baixada no próprio celular. Durante o turno, a posição do momento também é consultada no serviço de endereços do próprio Android (na maioria dos aparelhos, do Google) e, se ele não responder, no LocationIQ, para completar o número, o bairro e o nome do local do QRU. Isso acontece mesmo com a base de ruas no celular. Esses serviços recebem só a posição consultada, sem o seu nome, a sua chave ou o seu RE.</li>
-      <li><b>Ativação:</b> a chave de ativação é conferida no Firebase (Google). Vai só a chave, sem nome, telefone ou dados do aparelho. A chave contém o seu RE (matrícula), por isso ela identifica você.</li>
+      <li><b>Ativação:</b> a chave de ativação é conferida no Firebase (Google). Vai só a chave, sem nome, telefone ou dados do aparelho. As chaves pedidas pelo app (começam com OS-) não contêm dados seus. As chaves antigas contêm o seu RE (matrícula), por isso identificam você.</li>
       <li><b>Atualizações e mapas de ruas:</b> na versão baixada no site, o app baixa as versões novas de ondestive.com. Na versão da Google Play, as atualizações vêm pela loja, conforme as regras do Google. Nas duas, os pacotes de ruas vêm do GitHub. Como em qualquer download, esses serviços veem o endereço de internet do aparelho.</li>
     </ul>
 
     <h3>5. Cadastro para receber a chave</h3>
+    <p><b>Pelo app (desde 28 de novembro de 2026):</b> na tela da chave, você toca em “Entrar com Google”, escolhe a sua conta e informa o seu nome completo. O Google confirma a conta ao nosso painel (acesso.ondestive.com, na Cloudflare), que guarda o nome completo, o e-mail e o código da conta Google, a data do pedido, a chave, a validade, se ela está bloqueada e as trocas de celular. Não pedimos RE, posto, batalhão nem telefone. A chave aparece na hora no app e vale 5 dias, que o administrador pode prorrogar. Se você pedir a chave com a mesma conta em outro celular, recebe uma chave nova e a anterior deixa de funcionar.</p>
+    <p><b>Pelo formulário do site ou pelo WhatsApp:</b></p>
     <p>Para receber a chave, você preenche o formulário em acesso.ondestive.com com: QRA (nome de guerra), posto ou graduação, batalhão e companhia, RE (sem o dígito), telefone e e-mail. Quem pediu antes do formulário enviou os mesmos dados pelo WhatsApp. Até 24 de novembro de 2026 também era pedido o CPF, que não é mais.</p>
-    <p>O formulário guarda esses dados, a data do pedido, a decisão e a chave num banco da Cloudflare, que só o administrador acessa. Os pedidos anteriores ao formulário estão nesse mesmo banco. O app não recebe esses dados. Eles servem para liberar e controlar o acesso e para entrar em contato com você sobre o app, inclusive se no futuro ele passar a ser pago. Ninguém além do administrador usa esses dados, e eles não são vendidos nem repassados. A chave é enviada a você pelo WhatsApp. A Cloudflare, o Google e o WhatsApp guardam o que passa por eles conforme as regras de cada um. O banco da Cloudflare pode ficar fora do Brasil, e o banco das chaves (Firebase) fica nos Estados Unidos. Essa transferência para fora do Brasil é necessária para prestar o serviço que você pediu (LGPD, art. 33, IX, com o art. 7º, V).</p>
-    <p>Os dados ficam guardados enquanto a sua chave estiver em uso ou até você pedir a remoção. Se pedir, a sua chave deixa de funcionar.</p>
+    <p>O painel guarda esses dados, a data do pedido, a decisão e a chave num banco da Cloudflare, que só o administrador acessa. Os pedidos anteriores ao formulário estão nesse mesmo banco. O app não recebe esses dados. Eles servem para liberar e controlar o acesso e para entrar em contato com você sobre o app, inclusive se no futuro ele passar a ser pago. Ninguém além do administrador usa esses dados, e eles não são vendidos nem repassados. Nos pedidos pelo formulário, a chave é enviada pelo WhatsApp. A Cloudflare, o Google e o WhatsApp guardam o que passa por eles conforme as regras de cada um. O banco da Cloudflare pode ficar fora do Brasil, e o banco das chaves (Firebase) fica nos Estados Unidos. Essa transferência para fora do Brasil é necessária para prestar o serviço que você pediu (LGPD, art. 33, IX, com o art. 7º, V).</p>
+    <p>Os dados ficam guardados enquanto existir o seu cadastro. A chave pedida pelo app que venceu e não foi prorrogada fica bloqueada, mas o cadastro continua até você excluí-lo. Se você excluir a conta ou pedir a remoção, a sua chave deixa de funcionar.</p>
 
     <h3>6. Este site</h3>
     <p>O site não usa cookies nem contador de visitas. A página do formulário usa o Turnstile, da Cloudflare, para barrar robôs: ele analisa dados técnicos do navegador e o endereço de internet. O site passa pela Cloudflare, que o protege contra ataques e pode registrar dados técnicos do acesso, como o endereço de internet.</p>
@@ -59,7 +61,7 @@
     <ul>
       <li><b>Localização precisa e “o tempo todo”:</b> registrar o patrulhamento durante o turno, com a tela desligada.</li>
       <li><b>Notificações:</b> mostrar o turno em andamento e o aviso de fim do turno.</li>
-      <li><b>Ignorar a economia de bateria:</b> o Android não interromper o registro no meio do turno.</li>
+      <li><b>Ignorar a economia de bateria (só na versão do site):</b> o Android não interromper o registro no meio do turno. Na versão da Google Play, o app não pede essa permissão: ele explica e abre a tela de bateria do Android, onde você mesmo escolhe.</li>
       <li><b>Iniciar com o celular:</b> retomar o turno aberto depois de reiniciar o aparelho.</li>
       <li><b>Instalar apps (só na versão do site):</b> instalar as atualizações baixadas de ondestive.com.</li>
     </ul>
@@ -67,11 +69,13 @@
     <h3>8. Por que tratamos esses dados (base legal)</h3>
     <ul>
       <li><b>Localização e dados do turno:</b> para prestar o serviço que você pediu ao iniciar o turno, o registro do patrulhamento (LGPD, art. 7º, V: execução de contrato). Ficam no celular; só a posição do momento é consultada para achar o nome da rua.</li>
-      <li><b>Cadastro da chave</b> (QRA, posto ou graduação, batalhão e companhia, RE, telefone e e-mail): para liberar e controlar o seu acesso (art. 7º, V) e para evitar uso indevido da chave (art. 7º, IX: legítimo interesse).</li>
+      <li><b>Cadastro pelo app</b> (nome completo e conta Google): para liberar e controlar o seu acesso (art. 7º, V) e para evitar uso indevido da chave (art. 7º, IX: legítimo interesse).</li>
+      <li><b>Cadastro pelo formulário ou WhatsApp</b> (QRA, posto ou graduação, batalhão e companhia, RE, telefone e e-mail): para liberar e controlar o seu acesso (art. 7º, V) e para evitar uso indevido da chave (art. 7º, IX: legítimo interesse).</li>
       <li><b>Contato sobre o app</b>, inclusive sobre mudanças no acesso: legítimo interesse (art. 7º, IX). Você pode pedir para não receber mais esses contatos pelo e-mail acima.</li>
     </ul>
 
     <h3>9. Seus direitos (LGPD)</h3>
+    <p>Para excluir o cadastro feito pelo app, toque em “Excluir minha conta” no fim da tela inicial do app e escolha a conta Google com que pediu a chave: o cadastro e a chave são apagados na hora, e os turnos e relatórios continuam no celular. Para excluir um cadastro feito pelo formulário ou pelo WhatsApp, escreva para o e-mail acima.</p>
     <p>Para apagar seus dados do app, desinstale-o ou limpe os dados dele nas configurações do Android. Para saber quais dados seus estão no cadastro da chave, corrigi-los ou pedir a remoção, ou para tirar dúvidas, escreva para <a href="mailto:ondestiveapp@gmail.com">ondestiveapp@gmail.com</a>.</p>
     <p>A confirmação de que tratamos dados seus é dada na hora, de forma simplificada. A declaração completa, com a origem dos dados, a finalidade e os critérios usados, é enviada em até 15 dias a partir do pedido (LGPD, art. 19).</p>
   </div>
